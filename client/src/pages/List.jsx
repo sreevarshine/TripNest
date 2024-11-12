@@ -19,7 +19,9 @@ const List = () => {
   const { dispatch } = useContext(SearchContext);
 
   const { data, loading, error, reFetch } = useFetch(
-    `http://localhost:8000/api/hotels?city=${destination.toLowerCase()}&min=${min || 0}&max=${
+    `${
+      import.meta.env.VITE_API_URL
+    }/hotels?city=${destination.toLowerCase()}&min=${min || 0}&max=${
       max || 19999
     }`
   );
