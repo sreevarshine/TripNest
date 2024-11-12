@@ -137,7 +137,7 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
-                  className="headerSearchText"
+                  className="headerSearchText text-black"
                 >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
                 {openOptions && (
                   <div className="options absolute top-[50px] z-10 bg-white text-gray-500 rounded-[5px] shadow-lg">
