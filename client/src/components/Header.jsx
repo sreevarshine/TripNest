@@ -117,7 +117,7 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
                 <span
                   onClick={() => setOpenDate(!openDate)}
-                  className="headerSearchText cursor-pointer"
+                  className="headerSearchText cursor-pointer text-black"
                 >{`${format(dates[0].startDate, "MM/dd/yyyy")} to ${format(
                   dates[0].endDate,
                   "MM/dd/yyyy"
